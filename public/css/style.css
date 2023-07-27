@@ -1,0 +1,571 @@
+@import url(main.css);
+
+body {
+    margin: 0;
+}
+
+.accordion {
+    text-align: justify !important;
+}
+
+/* NAVBAR */
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: var(--pink-100);
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 990px) {
+    nav.navbar.navbar-expand-lg.navbar-light {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+img.logoNavbar {
+    width: 160px;
+}
+
+a.nav-link.fw-bold.navtxt {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-size: 16px;
+    line-height: 140%;
+}
+
+a.nav-link.fw-bold.navtxt.active {
+    color: var(--text);
+}
+
+a.nav-link.fw-bold.navtxt:hover {
+    color: var(--text);
+}
+
+.btn-sign-up {
+    background: var(--hijauMuda-30);
+    color: var(--text);
+    font-family: var(--fontKetiga);
+    font-size: 16px;
+    line-height: 140%;
+    border: none;
+}
+
+.btn-sign-up:hover,
+.btn-sign-up:active {
+    background: var(--hijauMuda-100) !important;
+    color: var(--putih) !important;
+    border: none !important;
+}
+
+.btn-login {
+    border: 2px solid var(--hijauTua-100);
+    color: var(--text);
+    font-family: var(--fontKetiga);
+    font-size: 16px;
+    /* height: 35px; */
+    line-height: 140%;
+}
+
+.btn-login:hover,
+.btn-login:active {
+    background: var(--hijauTua-100) !important;
+    color: var(--putih) !important;
+    border: 2px solid var(--hijauTua-100) !important;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--hijauMuda-50);
+}
+
+.logoFooter {
+    width: 110px;
+    border-radius: 5px;
+}
+
+.footerText {
+    font-family: var(--fontKedua);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.copyright {
+    font-family: var(--fontKedua);
+    color: var(--putih);
+    background-color: var(--hijauTua-100);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+/* HEADER */
+p.header,
+p.body-header {
+    color: var(--text);
+    line-height: 140%;
+    /* width: 535px; */
+}
+
+p.header {
+    font-family: var(--fontUtama);
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+p.body-header {
+    font-family: var(--fontKedua);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hbtn {
+    width: 182px;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    background-color: var(--pink-50);
+    color: var(--text);
+    font-family: var(--fontKedua);
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.hbtn i {
+    padding-right: 8px;
+}
+
+.btn-main-program::before{
+    position: absolute;
+    content: "";
+    background: var(--pink-100);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 0px;
+    height: 100%;
+    opacity: 1;
+}
+
+.btn-main-program:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.btn-main-program:hover {
+    background: var(--pink-100);
+    transition: color 0.3s ease 0s, background 0s ease 0.3s;
+    font-weight: 700;
+}
+
+/* SECTION 2 */
+.wrap-contents {
+    background: var(--pink-100);
+    background-size: cover;
+}
+
+.headSection {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    background-color: transparent !important; /* Menghilangkan warna latar belakang pada card */
+}
+
+.imgSect2 {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.cardTittleSect2 {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    width: 308px;
+}
+
+.cardTextSect2 {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    width: 305px;
+}
+
+/* SECTION 3 */
+.tittleSect3 {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.subTittleSect3 {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+/* TENTANG KAMI */
+.headTentangKami,
+.headTentangKamiCard {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    line-height: 140%;
+}
+.headTentangKami {
+    font-size: 36px;
+}
+
+.headTentangKamiCard {
+    font-size: 100px;
+    text-align: center;
+    height: 138px;
+    margin-bottom: 0;
+}
+
+.subTentangKami {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.tentangKami {
+    font-family: var(--fontKedua);
+    color: var(--text);
+    text-align: justify;
+}
+
+.headCard {
+    max-width: 540px;
+    border: none;
+    background-color: var(--pink-30) !important;
+    transition: box-shadow 0.3s;
+    transition: background-color 0.9s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headCard:hover{
+    background-color: var(--pink-50) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.cardAlternatif {
+    max-width: 540px;
+    transition: box-shadow 0.3s;
+}
+
+.cardAlternatif:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imgAlternatif {
+    height: 138px;
+}
+
+@media (max-width: 990px) {
+    .subTentangKami {
+        text-align: center;
+    }
+    
+    .imgAlternatif {
+        height: auto;
+    }
+}
+
+/* LOGIN REGISTER*/
+.login-register {
+    font-family: var(--fontKetiga);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.form-label {
+    font-family: var(--fontKetiga);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.btn-logReg {
+    background: var(--pink-70);
+    color: var(--text);
+    font-family: var(--fontKetiga);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-logReg:hover,
+.btn-logReg:active {
+    background: var(--pink-100) !important;
+}
+
+.btn-daftar {
+    border-color: var(--hijauTua-100);
+    color: var(--text);
+    font-family: var(--fontKetiga);
+    border: 2px solid;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-daftar:hover,
+.btn-daftar:active {
+    background: var(--hijauTua-100) !important;
+    color: var(--putih) !important;
+    border: 2px solid !important;
+}
+
+.preview-image {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#toggle-password {
+    cursor: pointer;
+}
+
+.sorry-text {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 700;
+    font-size: 16px;
+    width: 300px;
+}
+
+.lupa-password {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-size: 14px;
+}
+
+/* AKUN */
+.avatar {
+    display: block;
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    margin-top: -80px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+@media (max-width: 990px) {
+    .img-banner {
+        height: 150px;
+    }
+    
+    .avatar {
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.namaUser {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.umur {
+    font-family: var(--fontKedua);
+    color: var(--hitam-50);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.recomendMoistSmall {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: -1px;
+    padding-bottom: 5px;
+}
+
+.recomendMoist {
+    font-family: var(--fontKedua);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.btn-edit,
+.btn-reset {
+    font-family: var(--fontKedua);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    background-color: var(--hijauTua-70);
+    color: var(--putih);
+}
+
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: var(--hijauTua-100);
+    color: var(--putih);
+}
+
+.btn-reset {
+    background-color: var(--pink-70);
+    color: var(--text);
+}
+
+.btn-reset:hover,
+.btn-reset:active {
+    background-color: var(--pink-100);
+}
+
+.tittleHasil {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.text-oops {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    width: 400px;
+    margin: auto;
+}
+
+/* TEST PEMILIHAN PELEMBAB */
+.bg-question {
+    background: var(--hijauTua-10);
+    box-shadow: 0px 9px 20px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.bagian {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.oh-no-head {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+}
+
+.oh-no {
+    font-family: var(--fontKedua);
+    color: var(--hitam-70);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.descBagian {
+    font-family: var(--fontKedua);
+    color: var(--hitam-50);
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.bagianHead {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: right;
+}
+
+.form-label-question {
+    font-family: var(--fontKedua);
+    color: var(--text);
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 5px;
+}
+
+.btn-Question {
+    font-family: var(--fontKedua);
+    color: var(--text);
+    background-color: var(--pink-70);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.btn-Question:hover,
+.btn-Question:active {
+    background-color: var(--pink-100);
+    color: var(--putih);
+}
+
+.hastagFooter {
+    font-family: var(--fontUtama);
+    color: var(--text);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+}
+
+@media (max-width: 990px) {
+    .vertical-radio {
+        display: block !important;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 990px) {
+    .hastagFooter {
+        font-size: 14px;
+    }
+    
+    .modal-backdrop {
+        z-index: -1;
+      }
+}

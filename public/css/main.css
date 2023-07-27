@@ -1,0 +1,36 @@
+:root {
+    /* COLOR */
+    /* HITAM */
+    --hitam-70: #50555D;
+    --hitam-50: #82868B;
+    --hitam-30: #B4B6B9;
+    --hitam-10: #E6E6E7;
+    /* HIJAU TUA */
+    --hijauTua-100: #245953;
+    --hijauTua-70: #658A86;
+    --hijauTua-50: #91ACA9;
+    --hijauTua-30: #BDCDCB;
+    --hijauTua-10: #E9EEED;
+    /* HIJAU MUDA */
+    --hijauMuda-100: #408E91;
+    --hijauMuda-70: #79AFB2;
+    --hijauMuda-50: #9FC6C8;
+    --hijauMuda-30: #C5DDDE;
+    --hijauMuda-10: #EBF3F4;
+    /* PINK */
+    --pink-100: #E49393;
+    --pink-70: #ECB3B3;
+    --pink-50: #F1C9C9;
+    --pink-30: #F6DEDE;
+    --pink-10: #FCF4F4;
+    /* PUTIH */
+    --putih: #FFFFFF;
+    
+    /* FONT */
+    --fontUtama: 'Montserrat', sans-serif;
+    --fontKedua: 'Roboto', sans-serif;
+    --fontKetiga: 'Poppins', sans-serif;
+    
+    /* TEXT */
+    --text: #050D18;
+  }
